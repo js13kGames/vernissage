@@ -15,7 +15,6 @@ import { colorDistance } from './util/color'
 
 import { mutate, initAdn } from './genetic/mutate'
 import { getRImage } from './genetic/ADNtoRImage'
-import { packADN } from './genetic/packADN'
 import { step } from './genetic'
 
 import * as PARAM from './param'
@@ -78,4 +77,16 @@ const run = async () => {
     loop()
 }
 
-run()
+// run()
+
+{
+    const PATH = require('./asset/pack/mona.adn')
+    fetch(PATH).then(res => res.blob()).then(blob => {
+        var reader = new FileReader()
+        reader.addEventListener('loadend', function() {
+            // reader.result contains the contents of blob as a typed array
+            console.log(reader.result)
+        })
+        reader.readAsBinaryString(blob)
+    })
+}

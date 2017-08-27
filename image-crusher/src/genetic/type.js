@@ -14,4 +14,17 @@ export type Dot = {
     opacity: number,
 }
 
+export type Mutation = {
+    type : 'dot_mutation',
+
+    k : number,
+
+    dot : Dot,
+} | {
+    type : 'dot_permutation',
+
+    a : number,
+    b : number,
+}
+
 export type ADN = Dot[]

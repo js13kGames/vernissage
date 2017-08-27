@@ -42,3 +42,17 @@ export const drawCircle = (
             setColorAt(a, ux, uy, blended)
         }
 }
+
+export const add = ( a, b, opacity, offsetx, offsety, width, height ) => {
+
+    for (let ux = Math.max(0, x - r); ux <= Math.min(SIZE - 1, x + r); ux++)
+    for (let uy = Math.max(0, y - r); uy <= Math.min(SIZE - 1, y + r); uy++)
+        if ((ux - x) * (ux - x) + (uy - y) * (uy - y) <= r * r) {
+
+            const blended = blendColor( getColorAt(a, ux, uy), color, opacity )
+
+            setColorAt(a, ux, uy, blended)
+        }
+
+
+}
