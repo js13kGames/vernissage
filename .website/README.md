@@ -1,0 +1,18 @@
+---
+post: https://platane.github.io/js13k-2017/postmortem
+# See github.com/js13kGames/hello-world for supported frontmatter
+---
+
+You are lost in a museum.
+
+Find your way out, take some times to look at the painting. It might guide you!
+
+Desktop:
+Look with clic + mouse
+Move forward with the space bar
+
+Mobile:
+Move forward by touching
+
+Cardboard:
+Move forward with the magnetic button
