@@ -1,4 +1,7 @@
 ---
+genres:
+  - adventure
+  - puzzle
 post: https://platane.github.io/js13k-2017/postmortem
 # See github.com/js13kGames/hello-world for supported frontmatter
 ---
